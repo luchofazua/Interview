@@ -1,4 +1,4 @@
-package sample.validation;
+package validation;
 
 public class LongSerialNumberValidator implements Acceptable {
     @Override
