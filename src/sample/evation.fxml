@@ -1,75 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
-
-<VBox prefHeight="420.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-  <children>
-    <MenuBar VBox.vgrow="NEVER">
-      <menus>
-        <Menu mnemonicParsing="false" text="File">
-          <items>
-              <MenuItem mnemonicParsing="false" text="Quit" />
-          </items>
-        </Menu>
-
-        <Menu mnemonicParsing="false" text="Help">
-          <items>
-            <MenuItem mnemonicParsing="false" text="About" />
-          </items>
-        </Menu>
-      </menus>
-    </MenuBar>
+<VBox prefHeight="420.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.Controller">
     <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="401.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
-      <children>
-            <Label alignment="CENTER" layoutX="13.0" layoutY="1.0" style="&#10;" text="Drivepack" textAlignment="CENTER" wrapText="false">
-               <font>
-                  <Font size="18.0" fx:id="x1" />
-               </font>
-               <textFill>
-                  <Color blue="0.624" green="0.624" red="0.624" fx:id="x2" />
-               </textFill>
-            </Label>
-            <TextField layoutX="252.0" layoutY="39.0" prefHeight="31.0" prefWidth="228.0" promptText="Example: 97126532" />
-            <Label layoutX="28.0" layoutY="44.0" text="Serial number:" />
-            <Label layoutX="28.0" layoutY="84.0" text="Software Version:" />
-            <Label layoutX="28.0" layoutY="122.0" prefHeight="22.0" prefWidth="145.0" text="Motor serial number:" />
-            <TextField layoutX="252.0" layoutY="79.0" prefHeight="31.0" prefWidth="227.0" promptText="Example: 4.19" />
-            <TextField layoutX="252.0" layoutY="117.0" prefHeight="31.0" prefWidth="227.0" promptText="Example: 51235" />
-            <Label alignment="CENTER" layoutX="16.0" layoutY="157.0" style="&#10;" text="Bottom Bracket" textAlignment="CENTER" wrapText="false">
-               <font>
-                  <Font size="18.0" fx:id="x11" />
-               </font>
-               <textFill>
-                  <Color blue="0.624" green="0.624" red="0.624" fx:id="x21" />
-               </textFill>
-            </Label>
-            <Label layoutX="28.0" layoutY="240.0" text="Torque sensor serial number:" />
-            <TextField layoutX="252.0" layoutY="194.0" prefHeight="31.0" prefWidth="228.0" promptText="Example: 82717613" />
-            <Label layoutX="29.0" layoutY="199.0" text="Serial number:" />
-            <TextField layoutX="252.0" layoutY="235.0" prefHeight="31.0" prefWidth="228.0" promptText="Example: DAC32F5854E" />
-            <Label alignment="CENTER" layoutX="16.0" layoutY="274.0" style="&#10;" text="Remote" textAlignment="CENTER" wrapText="false">
-               <font>
-                  <Font size="18.0" fx:id="x111" />
-               </font>
-               <textFill>
-                  <Color blue="0.624" green="0.624" red="0.624" fx:id="x211" />
-               </textFill>
-            </Label>
-            <Button layoutX="502.0" layoutY="126.0" mnemonicParsing="false" onAction="#createAndTestButtonClicked" prefHeight="117.0" prefWidth="124.0" text="Create and Test" />
-            <TextField layoutX="252.0" layoutY="301.0" prefHeight="31.0" prefWidth="228.0" promptText="Example: 14986154" />
-            <Label layoutX="29.0" layoutY="306.0" text="Serial number:" />
-            <Label layoutX="29.0" layoutY="344.0" text="HMI board serial number:" />
-            <TextField layoutX="252.0" layoutY="339.0" prefHeight="31.0" prefWidth="228.0" promptText="Example: 32971" />
-      </children>
+        <Label alignment="CENTER" layoutX="13.0" layoutY="1.0" style="&#10;" text="Drivepack" textAlignment="CENTER"
+               wrapText="false">
+            <font>
+              <Font size="18.0" fx:id="x1"/>
+            </font>
+            <textFill>
+              <Color blue="0.624" green="0.624" red="0.624" fx:id="x2"/>
+            </textFill>
+        </Label>
+        <TextField fx:id="dpsn" layoutX="252.0" layoutY="39.0" prefHeight="31.0" prefWidth="228.0"
+                   promptText="Example: 97126532"/>
+        <Label layoutX="28.0" layoutY="44.0" text="Serial number:"/>
+        <Label layoutX="28.0" layoutY="84.0" text="Software Version:"/>
+        <Label layoutX="28.0" layoutY="122.0" prefHeight="22.0" prefWidth="145.0" text="Motor serial number:"/>
+        <TextField fx:id="dpsv" layoutX="252.0" layoutY="79.0" prefHeight="31.0" prefWidth="227.0"
+                   promptText="Example: 4.19"/>
+        <TextField fx:id="dpmsn" layoutX="252.0" layoutY="117.0" prefHeight="31.0" prefWidth="227.0"
+                   promptText="Example: 51235"/>
+        <Label alignment="CENTER" layoutX="16.0" layoutY="157.0" style="&#10;" text="Bottom Bracket"
+               textAlignment="CENTER" wrapText="false">
+            <font>
+              <Font size="18.0" fx:id="x11"/>
+            </font>
+            <textFill>
+              <Color blue="0.624" green="0.624" red="0.624" fx:id="x21"/>
+            </textFill>
+        </Label>
+        <Label layoutX="28.0" layoutY="240.0" text="Torque sensor serial number:"/>
+        <TextField fx:id="bbsn" layoutX="252.0" layoutY="194.0" prefHeight="31.0" prefWidth="228.0"
+                   promptText="Example: 82717613"/>
+        <Label layoutX="29.0" layoutY="199.0" text="Serial number:"/>
+        <TextField fx:id="bbtssn" layoutX="252.0" layoutY="235.0" prefHeight="31.0" prefWidth="228.0"
+                   promptText="Example: DAC32F5854E"/>
+        <Label alignment="CENTER" layoutX="16.0" layoutY="274.0" style="&#10;" text="Remote" textAlignment="CENTER"
+               wrapText="false">
+            <font>
+              <Font size="18.0" fx:id="x111"/>
+            </font>
+            <textFill>
+              <Color blue="0.624" green="0.624" red="0.624" fx:id="x211"/>
+            </textFill>
+        </Label>
+        <Button layoutX="491.0" layoutY="126.0" mnemonicParsing="false" onAction="#createAndTestButtonClicked"
+                prefHeight="117.0" prefWidth="135.0" text="Assemble &amp; Test" textOverrun="CLIP"/>
+        <TextField fx:id="rsn" layoutX="252.0" layoutY="301.0" prefHeight="31.0" prefWidth="228.0"
+                   promptText="Example: 14986154"/>
+        <Label layoutX="29.0" layoutY="306.0" text="Serial number:"/>
+        <Label layoutX="29.0" layoutY="344.0" text="HMI board serial number:"/>
+        <TextField fx:id="rhbsn" layoutX="252.0" layoutY="339.0" prefHeight="31.0" prefWidth="228.0"
+                   promptText="Example: 32971"/>
     </AnchorPane>
-  </children>
 </VBox>

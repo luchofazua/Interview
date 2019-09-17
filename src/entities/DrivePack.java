@@ -2,25 +2,40 @@ package entities;
 
 public class DrivePack {
 
-    private Integer serialNumber;
-    private Double softwareVersion;
-    private Integer motorSerialNumber;
+    private int serialNumber;
+    private short softwareVersion;
+    private short motorSerialNumber;
 
-    public DrivePack(Integer serialNumber, Double softwareVersion, Integer motorSerialNumber) {
+    public DrivePack() {
+    }
+
+    public DrivePack(int serialNumber, short softwareVersion, short motorSerialNumber) {
         this.serialNumber = serialNumber;
         this.softwareVersion = softwareVersion;
         this.motorSerialNumber = motorSerialNumber;
     }
 
-    public Integer getSerialNumber() {
+    public int getSerialNumber() {
         return serialNumber;
     }
 
-    public Double getSoftwareVersion() {
+    public short getSoftwareVersion() {
         return softwareVersion;
     }
 
-    public Integer getMotorSerialNumber() {
+    public short getMotorSerialNumber() {
         return motorSerialNumber;
+    }
+
+    public void setSerialNumber(int serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public void setSoftwareVersion(short softwareVersion) {
+        this.softwareVersion = softwareVersion;
+    }
+
+    public void setMotorSerialNumber(short motorSerialNumber) {
+        this.motorSerialNumber = motorSerialNumber;
     }
 }

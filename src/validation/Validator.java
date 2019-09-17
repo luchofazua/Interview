@@ -1,6 +1,6 @@
 package validation;
 
-public interface Acceptable {
+public interface Validator {
 
     boolean isValid(String input);
 }

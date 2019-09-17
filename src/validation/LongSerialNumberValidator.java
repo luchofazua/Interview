@@ -1,8 +1,14 @@
 package validation;
 
-public class LongSerialNumberValidator implements Acceptable {
+public class LongSerialNumberValidator implements Validator {
     @Override
     public boolean isValid(String input) {
-        return false;
+        try {
+            int value = Integer.parseInt(input);
+            if ( value > 0 ) return false;
+        }catch (NumberFormatException e){
+            return true;
+        }
+        return true;
     }
 }

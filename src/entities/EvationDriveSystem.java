@@ -5,6 +5,8 @@ public class EvationDriveSystem {
     private DrivePack drivePack;
     private Remote remote;
 
+    public EvationDriveSystem() {
+    }
 
     public EvationDriveSystem(BottomBracket bottomBracket, DrivePack drivePack, Remote remote) {
         this.bottomBracket = bottomBracket;
@@ -22,5 +24,17 @@ public class EvationDriveSystem {
 
     public Remote getRemote() {
         return remote;
+    }
+
+    public void setBottomBracket(BottomBracket bottomBracket) {
+        this.bottomBracket = bottomBracket;
+    }
+
+    public void setDrivePack(DrivePack drivePack) {
+        this.drivePack = drivePack;
+    }
+
+    public void setRemote(Remote remote) {
+        this.remote = remote;
     }
 }

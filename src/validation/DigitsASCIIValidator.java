@@ -1,9 +1,9 @@
 package validation;
 
-public class DigitsASCIIValidator implements Acceptable {
+public class DigitsASCIIValidator implements Validator {
 
     @Override
     public boolean isValid(String input) {
-        return false;
+        return (input.length() > 12 || input.length() <= 0);
     }
 }

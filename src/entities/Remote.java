@@ -2,10 +2,13 @@ package entities;
 
 public class Remote {
 
-    private Integer serialNumber;
-    private Integer boardSerialNumber;
+    private int serialNumber;
+    private short boardSerialNumber;
 
-    public Remote(Integer serialNumber, Integer boardSerialNumber) {
+    public Remote() {
+    }
+
+    public Remote(int serialNumber, short boardSerialNumber) {
         this.serialNumber = serialNumber;
         this.boardSerialNumber = boardSerialNumber;
     }
@@ -14,7 +17,15 @@ public class Remote {
         return serialNumber;
     }
 
-    public Integer getBoardSerialNumber() {
+    public short getBoardSerialNumber() {
         return boardSerialNumber;
+    }
+
+    public void setSerialNumber(int serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public void setBoardSerialNumber(short boardSerialNumber) {
+        this.boardSerialNumber = boardSerialNumber;
     }
 }
