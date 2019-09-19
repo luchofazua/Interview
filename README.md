@@ -21,10 +21,10 @@ Execute JavaFxApp.jar (In Linux systems mark as executable)
 
 1. Fill up the form manually with all production values.
 2. Click the button to set production values to each piece and run the test. 
-3. Have fun.
-
-(A new Evation Drive System object is created after each test)
-
+3. Click next to create a new Evation.
+4. Have fun!
 
 
-### Thanks =)!
+
+
+### Thanks =)
